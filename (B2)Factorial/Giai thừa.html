@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai thừa số nguyên dương</title>
+</head>
+<body onload="calFactorial()">
+<script>
+    function calFactorial(){
+        let num = +prompt("nhap so");
+        let factorial = 1;
+        for(let i = 1; i <= num; i++){
+            factorial *=i;
+        }
+        document.write("giai thua cua " + num + " la " + num + "! = " + factorial);
+    }
+</script>
+</body>
+</html>

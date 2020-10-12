@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In hình chữ nhật</title>
+</head>
+<body onload="printRectangle()">
+<script>
+    function printRectangle(){
+        let str = "*";
+        let strSpace = "&nbsp";
+        let count = 0;
+        document.write(str.repeat(20) + "<br>");
+        while (count < 5) {
+            document.write(str + strSpace.repeat(36) + str + "<br>");
+            count++;
+        }
+        document.write(str.repeat(20));
+    }
+</script>
+</body>
+</html>

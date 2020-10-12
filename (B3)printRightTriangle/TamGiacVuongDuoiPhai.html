@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In tam giác vuông</title>
+</head>
+<body onload="printRightTriangle()">
+<script>
+    function printRightTriangle(){
+        let str = "*";
+        let strSpace = "&nbsp;";
+        for(let i = 1; i <= 5; i++){
+            console.log(strSpace.repeat(5-i) + "a");
+            document.write(strSpace.repeat((5-i) * 2) + str.repeat(i) + "<br>");
+        }
+    }
+</script>
+</body>
+</html>

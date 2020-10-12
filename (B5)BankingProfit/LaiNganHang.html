@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lãi ngân hàng</title>
+</head>
+<body onload="calProfit()">
+<script>
+    function calProfit(){
+        var amount = +prompt("nhap so tien gui");
+        let time = +prompt("nhap thoi gian gui (so thang)");
+        let rate = 2 / 100;
+        for(let i = 1; i <= time; i++){
+            amount = amount + amount * rate;
+            console.log(amount);
+        }
+        alert(amount);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In hình trái tim</title>
+</head>
+<body onload="printHeart()">
+<script>
+    function printHeart(){
+        let str = "*";
+        let spaceStr = "&nbsp";
+        for(let i = 1; i < 3; i++){
+            document.write(spaceStr.repeat((2 - i) * 2) + str + spaceStr.repeat(i * 3) + str + spaceStr.repeat((3 - i) * 3) + str + spaceStr.repeat(i * 3) + str + "<br>");
+        }
+        for(let i = 5; i >= 0; i--){
+            document.write(spaceStr.repeat((5 - i) * 2) + str + spaceStr.repeat(i * 4) + str + "<br>");
+        }
+    }
+</script>
+</body>
+</html>
